@@ -6,6 +6,7 @@
 Perfectworld interfaces .xml finder.
 
 #### Purposes
+Find .xml interface files easily.
 To manually edit the interface, change the text and language.
 
 #### How to Use : 
