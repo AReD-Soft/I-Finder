@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.regex.Matcher;
@@ -18,7 +19,7 @@ public class SearchXMLWithGUI {
 
     public SearchXMLWithGUI() {
         // Menyiapkan GUI
-        frame = new JFrame("I-Finder");
+        frame = new JFrame("I-Finder V1.0");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(720, 600); // Lebar 720 piksel
         frame.setLayout(new BorderLayout());
@@ -117,7 +118,8 @@ public class SearchXMLWithGUI {
                     searchInFolder(keyword, file);  // Pencarian rekursif di subfolder
                 } else if (file.getName().endsWith(".xml")) {
                     try {
-                        String content = new String(Files.readAllBytes(Paths.get(file.getAbsolutePath())));
+                        // Membaca konten file, memperhatikan BOM untuk UTF-8 dan UTF-16
+                        String content = readFileWithBOM(file);
                         // Regex untuk menemukan String="..."
                         String regex = "String=\"(.*?)\"";
                         Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
@@ -146,6 +148,20 @@ public class SearchXMLWithGUI {
                 }
             }
         }
+    }
+
+    private String readFileWithBOM(File file) throws IOException {
+        byte[] bytes = Files.readAllBytes(file.toPath());
+        // Periksa BOM UTF-8
+        if (bytes.length >= 3 && bytes[0] == (byte) 0xEF && bytes[1] == (byte) 0xBB && bytes[2] == (byte) 0xBF) {
+            return new String(bytes, 3, bytes.length - 3, StandardCharsets.UTF_8); // Mengabaikan BOM
+        }
+        // Periksa BOM UTF-16
+        else if (bytes.length >= 2 && bytes[0] == (byte) 0xFF && bytes[1] == (byte) 0xFE) {
+            return new String(bytes, 2, bytes.length - 2, StandardCharsets.UTF_16LE); // Mengabaikan BOM
+        }
+        // Jika tidak ada BOM, gunakan UTF-8 sebagai default
+        return new String(bytes, StandardCharsets.UTF_8);
     }
 
     private void addResultPanel(File file, String foundString) {
