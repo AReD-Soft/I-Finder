@@ -1,6 +1,7 @@
 <picture>
   <img src="./res/icon" width="50%">
 </picture>
+
 # I-Finder
 Perfectworld interfaces .xml finder.
 
