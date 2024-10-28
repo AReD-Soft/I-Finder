@@ -12,7 +12,7 @@ To manually edit the interface, change the text and language.
 1. Extract all the contents of interfaces.pck.
 2. Put it in one folder, leave it as is.
 3. Look inside your game, which word you want to change.
-4. Then search whith this app for those words, change whatever you need.
+4. Then search for those words through the app, changing whatever you need.
 5. Open the file and edit the .xml according to your language.
 6. I recommend [VSCode](https://code.visualstudio.com/) or [Sublimetext](https://www.sublimetext.com/download) for editing text in UTF-16 format with bom code, the game only reads text in that format.
 7. Done, repack the interfaces.pck again.
