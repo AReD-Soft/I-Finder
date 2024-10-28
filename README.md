@@ -21,6 +21,6 @@ To manually edit the interface, change the text and language.
 #### How to compile 
 * Install latest [JDK](https://www.oracle.com/id/java/technologies/downloads/)
 * Set JDK bin folder location to system : Environment Variables -> System variables -> PATH -> <your-JDK/bin-path>
-* Compile with : run compile.bat
+* Compile with run : compile.bat
 
 ## Language is not a limitation
