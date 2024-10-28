@@ -1,5 +1,5 @@
 <picture>
-  <img src="./res/icon.png" width="50%">
+  <img src="./res/icon.png" width="5%">
 </picture>
 
 # I-Finder
