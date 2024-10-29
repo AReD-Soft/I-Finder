@@ -22,5 +22,6 @@ To manually edit the interface, change the text and language.
 * Install latest [JDK](https://www.oracle.com/id/java/technologies/downloads/)
 * Set JDK bin folder location to system : Environment Variables -> System variables -> PATH -> <your-JDK/bin-path>
 * Compile with run : compile.bat
+* Use [Launch4j](https://sourceforge.net/projects/launch4j/files/launch4j-3/3.50/) to build an .exe
 
 ## Language is not a limitation
