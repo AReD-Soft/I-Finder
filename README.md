@@ -9,6 +9,10 @@ Perfectworld interfaces .xml finder.
 Find .xml interface files easily.<br>
 To manually edit the interface, change the text and language.
 
+#### How to run
+* [JDK 23](https://www.oracle.com/id/java/technologies/downloads/) installation required.
+* Download and run [I-Finder.exe](https://github.com/AReD-Soft/I-Finder/releases/download/I-Finder/I-Finder.exe)
+  
 #### How to Use : 
 1. Extract all the contents of interfaces.pck.
 2. Put it in one folder, leave it as is.
@@ -24,8 +28,6 @@ To manually edit the interface, change the text and language.
 * Compile with run : compile.bat
 * Use [Launch4j](https://sourceforge.net/projects/launch4j/files/launch4j-3/3.50/) to build an .exe
 
-#### How to run
-* [JDK 23](https://www.oracle.com/id/java/technologies/downloads/) installation required.
-* Download and run [I-Finder.exe](https://github.com/AReD-Soft/I-Finder/releases/download/I-Finder/I-Finder.exe)
+
   
 ## Language is not a limitation
