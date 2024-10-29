@@ -13,7 +13,7 @@ To manually edit the interface, change the text and language.
 * [JDK 23](https://www.oracle.com/id/java/technologies/downloads/) installation required.
 * Download and run [I-Finder.exe](https://github.com/AReD-Soft/I-Finder/releases/download/I-Finder/I-Finder.exe)
   
-#### How to Use : 
+#### How to use : 
 1. Extract all the contents of interfaces.pck.
 2. Put it in one folder, leave it as is.
 3. Look inside your game, which word you want to change.
