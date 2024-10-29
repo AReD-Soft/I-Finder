@@ -18,10 +18,14 @@ To manually edit the interface, change the text and language.
 6. I recommend [VSCode](https://code.visualstudio.com/) or [Sublimetext](https://www.sublimetext.com/download) for editing text in UTF-16 format with bom code, the game only reads text in that format.
 7. Done, repack the interfaces.pck again.
 
-#### How to compile and run
+#### How to compile
 * Install latest [JDK 23](https://www.oracle.com/id/java/technologies/downloads/) 
 * Set JDK bin folder location to system : Environment Variables -> System variables -> PATH -> <your-JDK/bin-path>
 * Compile with run : compile.bat
 * Use [Launch4j](https://sourceforge.net/projects/launch4j/files/launch4j-3/3.50/) to build an .exe
 
+#### How to run
+* [JDK 23](https://www.oracle.com/id/java/technologies/downloads/) installation required.
+* Download and run [I-Finder.exe](https://github.com/AReD-Soft/I-Finder/releases/download/I-Finder/I-Finder.exe)
+  
 ## Language is not a limitation
